@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="75dp"
+    android:padding="8dp">
+    <ImageView
+        android:id="@+id/imageProfile"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@android:drawable/screen_background_dark"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageProfile"
+        android:layout_alignParentTop="true"
+        android:text="Text goes here"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="19dp"/>
+    <ImageView
+        android:id="@+id/imageIcon"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@android:drawable/sym_def_app_icon"
+        android:layout_toRightOf="@id/imageProfile"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/imageIcon"
+        android:text="Some minutes ago"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"/>
+
+</RelativeLayout>

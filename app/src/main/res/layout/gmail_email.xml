@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="13dp">
+
+    <ImageView
+        android:id="@+id/imageProfile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:drawable/sym_call_incoming"
+        android:visibility="visible"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"/>
+    <TextView
+        android:id="@+id/nameOfSender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageProfile"
+        android:layout_toEndOf="@id/imageProfile"
+        android:text="Rachel Shin"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/nameOfRecipient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageProfile"
+        android:layout_toEndOf="@id/imageProfile"
+        android:layout_below="@id/nameOfSender"
+        android:text="to me"/>
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageProfile"
+        android:layout_toEndOf="@id/imageProfile"
+        android:layout_below="@id/nameOfRecipient"
+        android:text="Sep 13"/>
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageProfile"
+        android:layout_toEndOf="@id/date"
+        android:layout_below="@id/nameOfRecipient"
+        android:text="View Details"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:textColor="@android:color/holo_blue_bright"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/options"
+        android:background="@android:drawable/ic_lock_lock"/>
+    <ImageView
+        android:id="@+id/options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:drawable/ic_lock_power_off"/>
+    <TextView
+        android:id="@+id/messageStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Sunday works! If you can get Dexter and Sophie I will handle the chips and salsa."/>
+
+
+    <ImageView
+        android:id="@+id/imageIcon"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@android:drawable/arrow_down_float"
+        android:layout_below="@id/messageStart"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/imageIcon"
+        android:layout_toEndOf="@id/imageIcon"
+        android:layout_below="@id/messageStart"
+        android:text="Show quoted text"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"/>
+
+
+</RelativeLayout>
